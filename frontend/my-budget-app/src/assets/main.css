@@ -1,0 +1,90 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  color: #d7d7d8;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+button {
+  min-width: 30px;
+  min-height: 50px;
+  background: #53a551;
+  border: 1px solid #073B36;
+  padding: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-top: 0;
+  border-radius: 3%;
+}
+
+button:hover {
+  background-color: #3e7d3d;
+  transform: scale(1.02);
+}
+
+.adds {
+  display: flex;
+  gap: 8px;
+}
+
+.form-container {
+  margin: 10px 0;
+}
+
+.add-form {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+select {
+  appearance: none;
+  width: 50%;
+  height: 100%;
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 30px;
+  box-shadow: inset 1px 1px 3px #ccc;
+  border-radius: 5px;
+}
+
+.over-budget {
+  background-color: #bc4230;
+}
